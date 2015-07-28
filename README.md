@@ -16,7 +16,7 @@ This includes following:
 ##How To Use
 
 
-### Manual (or using git submodule)
+### Manual
  1. Add [Alamofire][4]
     - GPlaceAPI-Swift uses [Alamofire][4] so, you need to add Alamofire in your project 
  2. Download source files from this repository
