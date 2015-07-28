@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4A787C61EFE407C7CF4159 /* Pods_GPlaceAPIExample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE014F090C357EEE95A1000 /* Pods_GPlaceAPIExample_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7BC78C291B677F830028D9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C281B677F830028D9E2 /* AppDelegate.swift */; };
+		7BC78C2B1B677F830028D9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C2A1B677F830028D9E2 /* ViewController.swift */; };
+		7BC78C2E1B677F830028D9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC78C2C1B677F830028D9E2 /* Main.storyboard */; };
+		7BC78C301B677F830028D9E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC78C2F1B677F830028D9E2 /* Images.xcassets */; };
+		7BC78C331B677F830028D9E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC78C311B677F830028D9E2 /* LaunchScreen.xib */; };
+		7BC78C3F1B677F830028D9E2 /* GPlaceAPIExample_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C3E1B677F830028D9E2 /* GPlaceAPIExample_SwiftTests.swift */; };
+		7BC78CA11B6785D60028D9E2 /* GPAddressComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C841B6785D50028D9E2 /* GPAddressComponents.swift */; };
+		7BC78CA21B6785D60028D9E2 /* GPAutoCompleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C851B6785D50028D9E2 /* GPAutoCompleteRequest.swift */; };
+		7BC78CA31B6785D60028D9E2 /* GPAutoCompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C861B6785D50028D9E2 /* GPAutoCompleteResponse.swift */; };
+		7BC78CA41B6785D60028D9E2 /* GPGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C871B6785D50028D9E2 /* GPGeometry.swift */; };
+		7BC78CA51B6785D60028D9E2 /* GPlaceAPISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C881B6785D50028D9E2 /* GPlaceAPISetup.swift */; };
+		7BC78CA61B6785D60028D9E2 /* GPlaceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C891B6785D50028D9E2 /* GPlaceConstants.swift */; };
+		7BC78CA71B6785D60028D9E2 /* GPMatchedSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8A1B6785D50028D9E2 /* GPMatchedSubstring.swift */; };
+		7BC78CA81B6785D60028D9E2 /* GPOpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8B1B6785D50028D9E2 /* GPOpeningHours.swift */; };
+		7BC78CA91B6785D60028D9E2 /* GPOpeningHoursPeriods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8C1B6785D50028D9E2 /* GPOpeningHoursPeriods.swift */; };
+		7BC78CAA1B6785D60028D9E2 /* GPPeriodClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8D1B6785D50028D9E2 /* GPPeriodClose.swift */; };
+		7BC78CAB1B6785D60028D9E2 /* GPPeriodOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8E1B6785D50028D9E2 /* GPPeriodOpen.swift */; };
+		7BC78CAC1B6785D60028D9E2 /* GPPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C8F1B6785D50028D9E2 /* GPPhoto.swift */; };
+		7BC78CAD1B6785D60028D9E2 /* GPPlaceDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C901B6785D50028D9E2 /* GPPlaceDetailsRequest.swift */; };
+		7BC78CAE1B6785D60028D9E2 /* GPPlaceDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C911B6785D50028D9E2 /* GPPlaceDetailsResponse.swift */; };
+		7BC78CAF1B6785D60028D9E2 /* GPPlaceSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C921B6785D50028D9E2 /* GPPlaceSearchRequest.swift */; };
+		7BC78CB01B6785D60028D9E2 /* GPPlaceSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C931B6785D50028D9E2 /* GPPlaceSearchResponse.swift */; };
+		7BC78CB11B6785D60028D9E2 /* GPPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C941B6785D50028D9E2 /* GPPredictions.swift */; };
+		7BC78CB21B6785D60028D9E2 /* GPPriceLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C951B6785D50028D9E2 /* GPPriceLevel.swift */; };
+		7BC78CB31B6785D60028D9E2 /* GPQueryAutoCompleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C961B6785D50028D9E2 /* GPQueryAutoCompleteRequest.swift */; };
+		7BC78CB41B6785D60028D9E2 /* GPQueryAutoCompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C971B6785D50028D9E2 /* GPQueryAutoCompleteResponse.swift */; };
+		7BC78CB51B6785D60028D9E2 /* GPRankBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C981B6785D50028D9E2 /* GPRankBy.swift */; };
+		7BC78CB61B6785D60028D9E2 /* GPRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C991B6785D50028D9E2 /* GPRequestStatus.swift */; };
+		7BC78CB71B6785D60028D9E2 /* GPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9A1B6785D50028D9E2 /* GPResult.swift */; };
+		7BC78CB81B6785D60028D9E2 /* GPReviewAspectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9B1B6785D50028D9E2 /* GPReviewAspectType.swift */; };
+		7BC78CB91B6785D60028D9E2 /* GPReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9C1B6785D60028D9E2 /* GPReviews.swift */; };
+		7BC78CBA1B6785D60028D9E2 /* GPReviewsAspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9D1B6785D60028D9E2 /* GPReviewsAspects.swift */; };
+		7BC78CBB1B6785D60028D9E2 /* GPTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9E1B6785D60028D9E2 /* GPTerms.swift */; };
+		7BC78CBC1B6785D60028D9E2 /* GPTextSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78C9F1B6785D60028D9E2 /* GPTextSearchRequest.swift */; };
+		7BC78CBD1B6785D60028D9E2 /* GPTextSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC78CA01B6785D60028D9E2 /* GPTextSearchResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BC78C391B677F830028D9E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC78C1B1B677F830028D9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC78C221B677F830028D9E2;
+			remoteInfo = "GPlaceAPIExample-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BC78C231B677F830028D9E2 /* GPlaceAPIExample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPlaceAPIExample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC78C271B677F830028D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC78C281B677F830028D9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BC78C2A1B677F830028D9E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BC78C2D1B677F830028D9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BC78C2F1B677F830028D9E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BC78C321B677F830028D9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7BC78C381B677F830028D9E2 /* GPlaceAPIExample-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPlaceAPIExample-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC78C3D1B677F830028D9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC78C3E1B677F830028D9E2 /* GPlaceAPIExample_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlaceAPIExample_SwiftTests.swift; sourceTree = "<group>"; };
+		7BC78C841B6785D50028D9E2 /* GPAddressComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAddressComponents.swift; sourceTree = "<group>"; };
+		7BC78C851B6785D50028D9E2 /* GPAutoCompleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAutoCompleteRequest.swift; sourceTree = "<group>"; };
+		7BC78C861B6785D50028D9E2 /* GPAutoCompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAutoCompleteResponse.swift; sourceTree = "<group>"; };
+		7BC78C871B6785D50028D9E2 /* GPGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPGeometry.swift; sourceTree = "<group>"; };
+		7BC78C881B6785D50028D9E2 /* GPlaceAPISetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPlaceAPISetup.swift; sourceTree = "<group>"; };
+		7BC78C891B6785D50028D9E2 /* GPlaceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPlaceConstants.swift; sourceTree = "<group>"; };
+		7BC78C8A1B6785D50028D9E2 /* GPMatchedSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPMatchedSubstring.swift; sourceTree = "<group>"; };
+		7BC78C8B1B6785D50028D9E2 /* GPOpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPOpeningHours.swift; sourceTree = "<group>"; };
+		7BC78C8C1B6785D50028D9E2 /* GPOpeningHoursPeriods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPOpeningHoursPeriods.swift; sourceTree = "<group>"; };
+		7BC78C8D1B6785D50028D9E2 /* GPPeriodClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPeriodClose.swift; sourceTree = "<group>"; };
+		7BC78C8E1B6785D50028D9E2 /* GPPeriodOpen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPeriodOpen.swift; sourceTree = "<group>"; };
+		7BC78C8F1B6785D50028D9E2 /* GPPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPhoto.swift; sourceTree = "<group>"; };
+		7BC78C901B6785D50028D9E2 /* GPPlaceDetailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPlaceDetailsRequest.swift; sourceTree = "<group>"; };
+		7BC78C911B6785D50028D9E2 /* GPPlaceDetailsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPlaceDetailsResponse.swift; sourceTree = "<group>"; };
+		7BC78C921B6785D50028D9E2 /* GPPlaceSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPlaceSearchRequest.swift; sourceTree = "<group>"; };
+		7BC78C931B6785D50028D9E2 /* GPPlaceSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPlaceSearchResponse.swift; sourceTree = "<group>"; };
+		7BC78C941B6785D50028D9E2 /* GPPredictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPredictions.swift; sourceTree = "<group>"; };
+		7BC78C951B6785D50028D9E2 /* GPPriceLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPPriceLevel.swift; sourceTree = "<group>"; };
+		7BC78C961B6785D50028D9E2 /* GPQueryAutoCompleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPQueryAutoCompleteRequest.swift; sourceTree = "<group>"; };
+		7BC78C971B6785D50028D9E2 /* GPQueryAutoCompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPQueryAutoCompleteResponse.swift; sourceTree = "<group>"; };
+		7BC78C981B6785D50028D9E2 /* GPRankBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRankBy.swift; sourceTree = "<group>"; };
+		7BC78C991B6785D50028D9E2 /* GPRequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRequestStatus.swift; sourceTree = "<group>"; };
+		7BC78C9A1B6785D50028D9E2 /* GPResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPResult.swift; sourceTree = "<group>"; };
+		7BC78C9B1B6785D50028D9E2 /* GPReviewAspectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPReviewAspectType.swift; sourceTree = "<group>"; };
+		7BC78C9C1B6785D60028D9E2 /* GPReviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPReviews.swift; sourceTree = "<group>"; };
+		7BC78C9D1B6785D60028D9E2 /* GPReviewsAspects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPReviewsAspects.swift; sourceTree = "<group>"; };
+		7BC78C9E1B6785D60028D9E2 /* GPTerms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTerms.swift; sourceTree = "<group>"; };
+		7BC78C9F1B6785D60028D9E2 /* GPTextSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTextSearchRequest.swift; sourceTree = "<group>"; };
+		7BC78CA01B6785D60028D9E2 /* GPTextSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTextSearchResponse.swift; sourceTree = "<group>"; };
+		9658B3FB6527C8EDBE866CEC /* Pods-GPlaceAPIExample-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPlaceAPIExample-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPlaceAPIExample-Swift/Pods-GPlaceAPIExample-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE014F090C357EEE95A1000 /* Pods_GPlaceAPIExample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPlaceAPIExample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21D34617F4A6A2B74DE130E /* Pods-GPlaceAPIExample-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPlaceAPIExample-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPlaceAPIExample-Swift/Pods-GPlaceAPIExample-Swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BC78C201B677F830028D9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4A787C61EFE407C7CF4159 /* Pods_GPlaceAPIExample_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC78C351B677F830028D9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2088D4A8A36372EA081F03B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE014F090C357EEE95A1000 /* Pods_GPlaceAPIExample_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F3767B140F4B79774273663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9658B3FB6527C8EDBE866CEC /* Pods-GPlaceAPIExample-Swift.debug.xcconfig */,
+				E21D34617F4A6A2B74DE130E /* Pods-GPlaceAPIExample-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BC78C1A1B677F830028D9E2 = {
+			isa = PBXGroup;
+			children = (
+				7BC78C831B6785D50028D9E2 /* GPlaceAPI */,
+				7BC78C251B677F830028D9E2 /* GPlaceAPIExample-Swift */,
+				7BC78C3B1B677F830028D9E2 /* GPlaceAPIExample-SwiftTests */,
+				7BC78C241B677F830028D9E2 /* Products */,
+				3F3767B140F4B79774273663 /* Pods */,
+				2088D4A8A36372EA081F03B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BC78C241B677F830028D9E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C231B677F830028D9E2 /* GPlaceAPIExample-Swift.app */,
+				7BC78C381B677F830028D9E2 /* GPlaceAPIExample-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BC78C251B677F830028D9E2 /* GPlaceAPIExample-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C281B677F830028D9E2 /* AppDelegate.swift */,
+				7BC78C2A1B677F830028D9E2 /* ViewController.swift */,
+				7BC78C2C1B677F830028D9E2 /* Main.storyboard */,
+				7BC78C2F1B677F830028D9E2 /* Images.xcassets */,
+				7BC78C311B677F830028D9E2 /* LaunchScreen.xib */,
+				7BC78C261B677F830028D9E2 /* Supporting Files */,
+			);
+			path = "GPlaceAPIExample-Swift";
+			sourceTree = "<group>";
+		};
+		7BC78C261B677F830028D9E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C271B677F830028D9E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BC78C3B1B677F830028D9E2 /* GPlaceAPIExample-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C3E1B677F830028D9E2 /* GPlaceAPIExample_SwiftTests.swift */,
+				7BC78C3C1B677F830028D9E2 /* Supporting Files */,
+			);
+			path = "GPlaceAPIExample-SwiftTests";
+			sourceTree = "<group>";
+		};
+		7BC78C3C1B677F830028D9E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C3D1B677F830028D9E2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BC78C831B6785D50028D9E2 /* GPlaceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C881B6785D50028D9E2 /* GPlaceAPISetup.swift */,
+				7BC78C891B6785D50028D9E2 /* GPlaceConstants.swift */,
+				7BC78CBF1B6786A30028D9E2 /* Model */,
+				7BC78CBE1B6786800028D9E2 /* Enums */,
+				7BC78CC01B6786E70028D9E2 /* PlaceSearch */,
+				7BC78CC11B6786F90028D9E2 /* TextSearch */,
+				7BC78CC21B67870A0028D9E2 /* PlaceDetails */,
+				7BC78CC31B67871B0028D9E2 /* QueryAutoComplete */,
+				7BC78CC41B67872C0028D9E2 /* PlaceAutoComplete */,
+			);
+			name = GPlaceAPI;
+			path = ../GPlaceAPI;
+			sourceTree = "<group>";
+		};
+		7BC78CBE1B6786800028D9E2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C991B6785D50028D9E2 /* GPRequestStatus.swift */,
+				7BC78C981B6785D50028D9E2 /* GPRankBy.swift */,
+				7BC78C9B1B6785D50028D9E2 /* GPReviewAspectType.swift */,
+				7BC78C951B6785D50028D9E2 /* GPPriceLevel.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		7BC78CBF1B6786A30028D9E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C871B6785D50028D9E2 /* GPGeometry.swift */,
+				7BC78C8F1B6785D50028D9E2 /* GPPhoto.swift */,
+				7BC78C941B6785D50028D9E2 /* GPPredictions.swift */,
+				7BC78C9E1B6785D60028D9E2 /* GPTerms.swift */,
+				7BC78C9D1B6785D60028D9E2 /* GPReviewsAspects.swift */,
+				7BC78C9A1B6785D50028D9E2 /* GPResult.swift */,
+				7BC78C9C1B6785D60028D9E2 /* GPReviews.swift */,
+				7BC78C8D1B6785D50028D9E2 /* GPPeriodClose.swift */,
+				7BC78C8E1B6785D50028D9E2 /* GPPeriodOpen.swift */,
+				7BC78C8C1B6785D50028D9E2 /* GPOpeningHoursPeriods.swift */,
+				7BC78C8B1B6785D50028D9E2 /* GPOpeningHours.swift */,
+				7BC78C8A1B6785D50028D9E2 /* GPMatchedSubstring.swift */,
+				7BC78C841B6785D50028D9E2 /* GPAddressComponents.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC78CC01B6786E70028D9E2 /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C921B6785D50028D9E2 /* GPPlaceSearchRequest.swift */,
+				7BC78C931B6785D50028D9E2 /* GPPlaceSearchResponse.swift */,
+			);
+			name = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		7BC78CC11B6786F90028D9E2 /* TextSearch */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C9F1B6785D60028D9E2 /* GPTextSearchRequest.swift */,
+				7BC78CA01B6785D60028D9E2 /* GPTextSearchResponse.swift */,
+			);
+			name = TextSearch;
+			sourceTree = "<group>";
+		};
+		7BC78CC21B67870A0028D9E2 /* PlaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C901B6785D50028D9E2 /* GPPlaceDetailsRequest.swift */,
+				7BC78C911B6785D50028D9E2 /* GPPlaceDetailsResponse.swift */,
+			);
+			name = PlaceDetails;
+			sourceTree = "<group>";
+		};
+		7BC78CC31B67871B0028D9E2 /* QueryAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C961B6785D50028D9E2 /* GPQueryAutoCompleteRequest.swift */,
+				7BC78C971B6785D50028D9E2 /* GPQueryAutoCompleteResponse.swift */,
+			);
+			name = QueryAutoComplete;
+			sourceTree = "<group>";
+		};
+		7BC78CC41B67872C0028D9E2 /* PlaceAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				7BC78C851B6785D50028D9E2 /* GPAutoCompleteRequest.swift */,
+				7BC78C861B6785D50028D9E2 /* GPAutoCompleteResponse.swift */,
+			);
+			name = PlaceAutoComplete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BC78C221B677F830028D9E2 /* GPlaceAPIExample-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC78C421B677F830028D9E2 /* Build configuration list for PBXNativeTarget "GPlaceAPIExample-Swift" */;
+			buildPhases = (
+				B5FE973AD33C29B458BB3256 /* Check Pods Manifest.lock */,
+				7BC78C1F1B677F830028D9E2 /* Sources */,
+				7BC78C201B677F830028D9E2 /* Frameworks */,
+				7BC78C211B677F830028D9E2 /* Resources */,
+				2F4127C34066F07FACBBB8B1 /* Embed Pods Frameworks */,
+				3048CE4314DAD8A07F616302 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPlaceAPIExample-Swift";
+			productName = "GPlaceAPIExample-Swift";
+			productReference = 7BC78C231B677F830028D9E2 /* GPlaceAPIExample-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BC78C371B677F830028D9E2 /* GPlaceAPIExample-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC78C451B677F830028D9E2 /* Build configuration list for PBXNativeTarget "GPlaceAPIExample-SwiftTests" */;
+			buildPhases = (
+				7BC78C341B677F830028D9E2 /* Sources */,
+				7BC78C351B677F830028D9E2 /* Frameworks */,
+				7BC78C361B677F830028D9E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC78C3A1B677F830028D9E2 /* PBXTargetDependency */,
+			);
+			name = "GPlaceAPIExample-SwiftTests";
+			productName = "GPlaceAPIExample-SwiftTests";
+			productReference = 7BC78C381B677F830028D9E2 /* GPlaceAPIExample-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BC78C1B1B677F830028D9E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Darshan Patel";
+				TargetAttributes = {
+					7BC78C221B677F830028D9E2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					7BC78C371B677F830028D9E2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 7BC78C221B677F830028D9E2;
+					};
+				};
+			};
+			buildConfigurationList = 7BC78C1E1B677F830028D9E2 /* Build configuration list for PBXProject "GPlaceAPIExample-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BC78C1A1B677F830028D9E2;
+			productRefGroup = 7BC78C241B677F830028D9E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC78C221B677F830028D9E2 /* GPlaceAPIExample-Swift */,
+				7BC78C371B677F830028D9E2 /* GPlaceAPIExample-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BC78C211B677F830028D9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC78C2E1B677F830028D9E2 /* Main.storyboard in Resources */,
+				7BC78C331B677F830028D9E2 /* LaunchScreen.xib in Resources */,
+				7BC78C301B677F830028D9E2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC78C361B677F830028D9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F4127C34066F07FACBBB8B1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPlaceAPIExample-Swift/Pods-GPlaceAPIExample-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3048CE4314DAD8A07F616302 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPlaceAPIExample-Swift/Pods-GPlaceAPIExample-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FE973AD33C29B458BB3256 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC78C1F1B677F830028D9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC78CA21B6785D60028D9E2 /* GPAutoCompleteRequest.swift in Sources */,
+				7BC78CB71B6785D60028D9E2 /* GPResult.swift in Sources */,
+				7BC78CAF1B6785D60028D9E2 /* GPPlaceSearchRequest.swift in Sources */,
+				7BC78CA71B6785D60028D9E2 /* GPMatchedSubstring.swift in Sources */,
+				7BC78CAA1B6785D60028D9E2 /* GPPeriodClose.swift in Sources */,
+				7BC78CB61B6785D60028D9E2 /* GPRequestStatus.swift in Sources */,
+				7BC78CA61B6785D60028D9E2 /* GPlaceConstants.swift in Sources */,
+				7BC78CBD1B6785D60028D9E2 /* GPTextSearchResponse.swift in Sources */,
+				7BC78CA51B6785D60028D9E2 /* GPlaceAPISetup.swift in Sources */,
+				7BC78CAC1B6785D60028D9E2 /* GPPhoto.swift in Sources */,
+				7BC78CB91B6785D60028D9E2 /* GPReviews.swift in Sources */,
+				7BC78CAB1B6785D60028D9E2 /* GPPeriodOpen.swift in Sources */,
+				7BC78CB41B6785D60028D9E2 /* GPQueryAutoCompleteResponse.swift in Sources */,
+				7BC78CA31B6785D60028D9E2 /* GPAutoCompleteResponse.swift in Sources */,
+				7BC78CBC1B6785D60028D9E2 /* GPTextSearchRequest.swift in Sources */,
+				7BC78CAE1B6785D60028D9E2 /* GPPlaceDetailsResponse.swift in Sources */,
+				7BC78CBB1B6785D60028D9E2 /* GPTerms.swift in Sources */,
+				7BC78CA91B6785D60028D9E2 /* GPOpeningHoursPeriods.swift in Sources */,
+				7BC78CB31B6785D60028D9E2 /* GPQueryAutoCompleteRequest.swift in Sources */,
+				7BC78CA11B6785D60028D9E2 /* GPAddressComponents.swift in Sources */,
+				7BC78C2B1B677F830028D9E2 /* ViewController.swift in Sources */,
+				7BC78CB11B6785D60028D9E2 /* GPPredictions.swift in Sources */,
+				7BC78CB81B6785D60028D9E2 /* GPReviewAspectType.swift in Sources */,
+				7BC78CBA1B6785D60028D9E2 /* GPReviewsAspects.swift in Sources */,
+				7BC78CA41B6785D60028D9E2 /* GPGeometry.swift in Sources */,
+				7BC78CB21B6785D60028D9E2 /* GPPriceLevel.swift in Sources */,
+				7BC78CAD1B6785D60028D9E2 /* GPPlaceDetailsRequest.swift in Sources */,
+				7BC78CB51B6785D60028D9E2 /* GPRankBy.swift in Sources */,
+				7BC78CB01B6785D60028D9E2 /* GPPlaceSearchResponse.swift in Sources */,
+				7BC78C291B677F830028D9E2 /* AppDelegate.swift in Sources */,
+				7BC78CA81B6785D60028D9E2 /* GPOpeningHours.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC78C341B677F830028D9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC78C3F1B677F830028D9E2 /* GPlaceAPIExample_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BC78C3A1B677F830028D9E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC78C221B677F830028D9E2 /* GPlaceAPIExample-Swift */;
+			targetProxy = 7BC78C391B677F830028D9E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BC78C2C1B677F830028D9E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC78C2D1B677F830028D9E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BC78C311B677F830028D9E2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC78C321B677F830028D9E2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BC78C401B677F830028D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BC78C411B677F830028D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BC78C431B677F830028D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9658B3FB6527C8EDBE866CEC /* Pods-GPlaceAPIExample-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GPlaceAPIExample-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BC78C441B677F830028D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21D34617F4A6A2B74DE130E /* Pods-GPlaceAPIExample-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "GPlaceAPIExample-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BC78C461B677F830028D9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GPlaceAPIExample-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPlaceAPIExample-Swift.app/GPlaceAPIExample-Swift";
+			};
+			name = Debug;
+		};
+		7BC78C471B677F830028D9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GPlaceAPIExample-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPlaceAPIExample-Swift.app/GPlaceAPIExample-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BC78C1E1B677F830028D9E2 /* Build configuration list for PBXProject "GPlaceAPIExample-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC78C401B677F830028D9E2 /* Debug */,
+				7BC78C411B677F830028D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC78C421B677F830028D9E2 /* Build configuration list for PBXNativeTarget "GPlaceAPIExample-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC78C431B677F830028D9E2 /* Debug */,
+				7BC78C441B677F830028D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC78C451B677F830028D9E2 /* Build configuration list for PBXNativeTarget "GPlaceAPIExample-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC78C461B677F830028D9E2 /* Debug */,
+				7BC78C471B677F830028D9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BC78C1B1B677F830028D9E2 /* Project object */;
+}
